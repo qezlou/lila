@@ -3,6 +3,8 @@ Forecasting the cross-orrelation between Ly-Alpha Forest and Line Intensity map 
 
 This repo containts a python package written for Qezlou et al. 2023 which forecasts the 3D auto and cross power-spectra for Ly-alpha forest, CO Line intensity map [COMAP](https://comap.caltech.edu/) and galaxy redshift surveys. 
 
+#### Fun fact:
+Lali is a girl's name with Greek origin, short for "Eulalia" Meaning "Well-spoken" :) 
 
 ## Installation
 It requires python version < 3.9
