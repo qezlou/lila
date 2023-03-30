@@ -1,2 +1,40 @@
-# lim_lya
-Forecasting the Cross-Correlation between Line Intensity Map and Ly-Alpha Forest
+# Ly-Alpha forest X Line Intensity map (LALI)
+Forecasting the cross-orrelation between Ly-Alpha Forest and Line Intensity map surveys 
+
+This repo containts a python package written for Qezlou et al. 2023 which forecasts the 3D auto and cross power-spectra for Ly-alpha forest, CO Line intensity map [COMAP](https://comap.caltech.edu/) and galaxy redshift surveys. 
+
+
+## Installation
+It requires python version < 3.9
+
+You can install this simply by:
+
+1. pip :  `pip install lali`
+2. clonning this repo and then installing : 
+```
+git clone https://github.com/qezlou/lali.git
+cd lali
+python -m pip install -e .
+```
+
+## Contetnts:
+#### Modules:
+- `compa.py`: A module to make mock observations for [COMAP-Y5](https://comap.caltech.edu/)
+- `lim.py`: The base module for making LIM mocks, e.g. `comap.py` inherits from this. 
+- `mock_lya.py`: A module to make mock observations for the 3D Ly-alpha forest (tomography)
+- `mock_galaxy`: A module to make mock observations for galaxy redshfit surveys 
+- `stats.py`: Takes the mock observations as input and calculates the 3D auto and cross power-spectra
+- `inference.py`: Takes the forecast power spectra and runs inference on the paramters for the biased linear power spectra. 
+- `plot.py`: A few plotting tools.
+
+#### helper scripts:
+- `get_gal.py`: Get the mock 3D power spectra for auto CO, galaxy and CO X galaxy.
+- `get_lya.py`: Get the mock 3D power spectra for auto CO, Lya forest and CO X Lya forest.
+- `get_latis_source_pk.py`: Get the projected 2D power spectrum of the sources in [LATIS](https://ui.adsabs.harvard.edu/abs/2020ApJ...891..147N/abstract). **Note:** data used here for LATIS are not publicly available yet, so you can skip this code for now. 
+
+#### Notebooks:
+- `galaxy_selection.ipynb`: Analyzing the [HSC photometric obsevration](https://www.clauds.net/available-data) to obtain:
+1.  The median redshift uncertainties 
+2.  The mass completness with halo abundance matching technique. 
+- `SN_results.ipynb`: The results for the forecast S/N ratio of the CO, CO X Lya and CO X Galaxies.
+- `Inference.ipynb`: The results for the inferencee on the biased linear power spectrum parameters. 
