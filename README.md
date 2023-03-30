@@ -41,5 +41,5 @@ Note: We refrain from uploading the package to the Python Package Index (PyPI) b
 
 ## Data: 
 
-All the simulated data are available here on Zenodo:
+All the simulated data will be soon available on Zenodo.
 
