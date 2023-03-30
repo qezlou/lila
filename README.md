@@ -38,3 +38,7 @@ python -m pip install -e .
 2.  The mass completness with halo abundance matching technique. 
 - `SN_results.ipynb`: The results for the forecast S/N ratio of the CO, CO X Lya and CO X Galaxies.
 - `Inference.ipynb`: The results for the inferencee on the biased linear power spectrum parameters. 
+
+#### Data: 
+
+All the simulated data are available here on Zenodo:
