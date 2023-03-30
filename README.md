@@ -9,15 +9,13 @@ Lila is a name for girls with Arabic, Persian, and Hindi roots, meaning "night" 
 ## Installation
 It requires python version < 3.9
 
-You can install this simply by:
-
-1. pip :  `pip install lali`
-2. clonning this repo and then installing : 
+You can install this simply by clonning this repo and then installing : 
 ```
 git clone https://github.com/qezlou/lali.git
 cd lali
 python -m pip install -e .
 ```
+Note: We refrain from uploading the package to the Python Package Index (PyPI) because a package with the same name already exists, albeit in a different context. Nonetheless, we prefer to retain the name. :) 
 
 ## Contetnts:
 #### Modules:
