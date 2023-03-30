@@ -1,0 +1,20 @@
+axes.titlesize : 8
+axes.labelsize : 12
+legend.fontsize : 8
+patch.linewidth : 1
+lines.linewidth : 2
+contour.linewidth : 1
+lines.markersize : 2
+lines.marker : None
+xtick.labelsize : 9
+ytick.labelsize : 9
+figure.figsize :  3, 3
+text.usetex : True
+font.family : Serif
+errorbar.capsize: 7
+
+
+
+
+
+
