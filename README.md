@@ -1,10 +1,10 @@
-# Ly-Alpha forest X Line Intensity map (LALI)
-Forecasting the cross-orrelation between Ly-Alpha Forest and Line Intensity map surveys 
+# Line Intensity map X Ly-Alpha forest  (LILA)
+Forecasting the cross-orrelation between Line Intensity map and Ly-Alpha Forest surveys
 
 This repo containts a python package written for Qezlou et al. 2023 which forecasts the 3D auto and cross power-spectra for Ly-alpha forest, CO Line intensity map [COMAP](https://comap.caltech.edu/) and galaxy redshift surveys. 
 
-#### Fun fact:
-Lali is a girl's name with Greek origin, short for "Eulalia" Meaning "Well-spoken" :) 
+#### The story behind the name:
+Lila is a name for girls with Arabic, Persian, and Hindi roots, meaning "night" or "play". One famous reference to this name is the tale of ["Layla" (another spelling) and "Majnun"](https://en.wikipedia.org/wiki/Layla_and_Majnun), an ancient Arab story about the poet Qays from the 7th century and his beloved Layla. The story was later passed on to Persian culture through a beautiful poem written by Nizami Ganjavi between 584-1188. "Layla and Majnun" is also called the Eastern version of Romeo and Juliet by Shakespeare.
 
 ## Installation
 It requires python version < 3.9
@@ -44,3 +44,4 @@ python -m pip install -e .
 ## Data: 
 
 All the simulated data are available here on Zenodo:
+
