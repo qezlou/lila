@@ -5,11 +5,11 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="lali",
+    name="lila",
     version="0.0.0",
     author="Mahdi Qezlou, Simeon Bird, Adam Lidz, Guochao Sun, Andrew B. Newman",
     author_email="mahdi.qezlou@email.ucr.edu",
-    description="Ly-Alpha forest x Line Intensity map forecast (LALI)",
+    description="Line Intensity map X Ly-Alpha forest forecast (LILA)",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/mahdiqezlou/lali",

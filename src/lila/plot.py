@@ -4,7 +4,6 @@ import matplotlib
 from matplotlib import pyplot as plt
 import corner
 import matplotlib.lines as mlines
-from . import inference
 from astropy.cosmology import Planck15 as cosmo
 
 class Maps():
