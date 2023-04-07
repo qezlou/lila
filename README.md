@@ -12,7 +12,7 @@ It requires python version < 3.9
 You can install this simply by clonning this repo and then installing : 
 ```
 git clone https://github.com/qezlou/lila.git
-cd lali
+cd lila
 python -m pip install -e .
 ```
 Note: We refrain from uploading the package to the Python Package Index (PyPI) because a package with the same name already exists, albeit in a different context. Nonetheless, we prefer to retain the name. :) 
