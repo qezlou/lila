@@ -11,7 +11,7 @@ It requires python version < 3.9
 
 You can install this simply by clonning this repo and then installing : 
 ```
-git clone https://github.com/qezlou/lali.git
+git clone https://github.com/qezlou/lila.git
 cd lali
 python -m pip install -e .
 ```
