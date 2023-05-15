@@ -10,16 +10,16 @@ using namespace stan::math;
 stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 11> locations_array__ = 
 {" (found before start of program)",
- " (in '/home/mahdi/HD2/package_dev/LIM_LyTomo/notebooks/stan/auto_co.stan', line 10, column 4 to column 30)",
- " (in '/home/mahdi/HD2/package_dev/LIM_LyTomo/notebooks/stan/auto_co.stan', line 11, column 4 to column 19)",
- " (in '/home/mahdi/HD2/package_dev/LIM_LyTomo/notebooks/stan/auto_co.stan', line 16, column 4 to column 72)",
- " (in '/home/mahdi/HD2/package_dev/LIM_LyTomo/notebooks/stan/auto_co.stan', line 3, column 4 to column 10)",
- " (in '/home/mahdi/HD2/package_dev/LIM_LyTomo/notebooks/stan/auto_co.stan', line 4, column 11 to column 12)",
- " (in '/home/mahdi/HD2/package_dev/LIM_LyTomo/notebooks/stan/auto_co.stan', line 4, column 4 to column 17)",
- " (in '/home/mahdi/HD2/package_dev/LIM_LyTomo/notebooks/stan/auto_co.stan', line 5, column 11 to column 12)",
- " (in '/home/mahdi/HD2/package_dev/LIM_LyTomo/notebooks/stan/auto_co.stan', line 5, column 4 to column 21)",
- " (in '/home/mahdi/HD2/package_dev/LIM_LyTomo/notebooks/stan/auto_co.stan', line 6, column 11 to column 12)",
- " (in '/home/mahdi/HD2/package_dev/LIM_LyTomo/notebooks/stan/auto_co.stan', line 6, column 4 to column 27)"};
+ " (in '/home/mahdi/HD2/package_dev/lila/notebooks/stan/auto_co.stan', line 10, column 4 to column 30)",
+ " (in '/home/mahdi/HD2/package_dev/lila/notebooks/stan/auto_co.stan', line 11, column 4 to column 19)",
+ " (in '/home/mahdi/HD2/package_dev/lila/notebooks/stan/auto_co.stan', line 16, column 4 to column 72)",
+ " (in '/home/mahdi/HD2/package_dev/lila/notebooks/stan/auto_co.stan', line 3, column 4 to column 10)",
+ " (in '/home/mahdi/HD2/package_dev/lila/notebooks/stan/auto_co.stan', line 4, column 11 to column 12)",
+ " (in '/home/mahdi/HD2/package_dev/lila/notebooks/stan/auto_co.stan', line 4, column 4 to column 17)",
+ " (in '/home/mahdi/HD2/package_dev/lila/notebooks/stan/auto_co.stan', line 5, column 11 to column 12)",
+ " (in '/home/mahdi/HD2/package_dev/lila/notebooks/stan/auto_co.stan', line 5, column 4 to column 21)",
+ " (in '/home/mahdi/HD2/package_dev/lila/notebooks/stan/auto_co.stan', line 6, column 11 to column 12)",
+ " (in '/home/mahdi/HD2/package_dev/lila/notebooks/stan/auto_co.stan', line 6, column 4 to column 27)"};
 
 
 

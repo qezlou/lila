@@ -1,0 +1,18 @@
+\begin{table}
+\caption{Additional commands for mathematical symbols. These can only be used in maths mode.}
+\label{tab:mathssymbols}
+\begin{tabular*}{\columnwidth}{l@{\hspace*{20pt}}l@{\hspace*{10pt}}l}
+\hline
+Survey & $\langle T_{CO} \rangle b_{CO}$ & $P_{shot, CO}$\\[4pt]
+\hline \\[1pt]
+COMAP-Y5 & 1.68 \pm  0.17 & 647  \pm 136 \\[2pt]
+COMAP-Y5 $\ \times \ $ Gals  HSC-6bands, i < 26 & 1.67 \pm  0.13 & 663  \pm 135 \\[2pt]
+COMAP-Y5 $\ \times \ $ Gals HSC-10bands, i < 25 & 1.68 \pm  0.10 & 657  \pm 128 \\[2pt]
+COMAP-Y5 $\ \times \ $ Gals PFS & 1.68 \pm  0.08 & 654  \pm 119 \\[2pt]
+COMAP-Y5  \ $\ \times \ Ly\alpha$, eBOSS & 1.66 \pm  0.09 & 657  \pm 114 \\[2pt]
+COMAP-Y5  \ $\ \times  \ Ly\alpha$, DESI & 1.65 \pm  0.08 & 662  \pm 112 \\[2pt]
+COMAP-Y5  \ $\ \times  \ Ly\alpha$, PFS bright & 1.61 \pm  0.05 & 684  \pm 108 \\[2pt]
+COMAP-Y5  \ $\ \times  \ Ly\alpha$, PFS faint & 1.60 \pm  0.04 & 691  \pm 107 \\[2pt]
+\hline
+\end{tabular*}
+\end{table}

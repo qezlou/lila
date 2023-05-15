@@ -127,6 +127,30 @@ class Inference:
         ax[1,0].grid(which='both', axis='both')
 
         return fig, ax
+    
+    def latex_table_tbco_pshot(self, samples, labels):
+        """
+        Write a LaTex table for <T_co> b_co and P_shot,CO
+        """
+        latex_file = open('stan/tbco_pshot.txt','w')
+
+        latex_table = [r'\begin{table}', '\n',r'\caption{Additional commands for mathematical symbols. These can only be used in maths mode.}',
+                       '\n', r'\label{tab:mathssymbols}','\n', r'\begin{tabular*}{\columnwidth}{l@{\hspace*{20pt}}l@{\hspace*{10pt}}l}', '\n', 
+                       r'\hline','\n', r'Survey & $\langle T_{CO} \rangle b_{CO}$ & $P_{shot, CO}$\\[4pt]','\n', r'\hline \\[1pt]', '\n']
+        for i in range(len(samples)):
+            latex_table.append(f'{labels[i]} & {np.median(samples[i][:,0]):.2f} \\pm  {np.std(samples[i][:,0]):.2f} & '+
+                               f'{np.median(samples[i][:,1]):.0f}  \\pm {np.std(samples[i][:,1]):.0f} \\\\[2pt]'+'\n')
+
+        latex_table.append(r'\hline')
+        latex_table.append('\n') 
+        latex_table.append(r'\end{tabular*}')
+        latex_table.append('\n')
+        latex_table.append(r'\end{table}')
+        print(type(latex_table))
+        latex_file.writelines(latex_table)
+
+
+
 
     def all_params_corner(self, fig, infs, colors, labels, truths=[None, None, None, None, None], 
                         tick_label_size=None, axis_label_size= None, labelpad=None):
@@ -289,7 +313,7 @@ class Inference:
             ax_power.set_xscale('log')
             ax_power.set_yscale('log')
             ax_ratio.set_xscale('log')
-            ax_ratio.set_xlabel(r'k [cMpc/h]', fontsize=axis_label_size_x)
+            ax_ratio.set_xlabel(r'k [h/cMpc]', fontsize=axis_label_size_x)
             ax_ratio.set_ylabel(r'$\frac{\hat{P}}{P}$', fontsize=28)
             ax_power.tick_params(labelsize=tick_label_size, labelbottom=False)
             ax_ratio.tick_params(labelsize=tick_label_size)
@@ -543,7 +567,7 @@ class SN():
         return fig, ax
     
     def compare_tot_sn_single_mock(self, sts_lya, sts_gal, fig=None, ax=None, savefile=None, 
-                                alpha=0.95, lya_labels=None, auto_label='COMAP-Y5', gal_labels=None):
+                                alpha=0.95, lya_labels=None, auto_label='COMAP-Y5', gal_labels=None, text_offset=40):
         """Comparison between total S/N of  CO X Lya and CO X galaxy surveys
         The version used for a single mock
         """
@@ -572,6 +596,11 @@ class SN():
         ax.set_yticks(ypos)
         ax.set_yticklabels(labels)
         
+        ax.text(text_offset, 0-0.25, f'{sn_lim:.0f}', fontsize=25 , alpha=alpha)
+        for i in range(len(gal_labels)):
+            ax.text(text_offset, 1+i - 0.25, f'{list(sn_gal.values())[i]:.0f}', fontsize=25 , alpha=alpha)
+        for i in range(len(lya_labels)):
+            ax.text(text_offset, 1+len(gal_labels)+i -0.25, f'{list(sn_lya.values())[i]:.0f}', fontsize=25, alpha=alpha)
         
         ax.set_xlabel('total \ S/N')
         ax.set_ylabel('Survey')
