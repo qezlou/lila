@@ -14,8 +14,7 @@ import logging.config
 from nbodykit.lab import ArrayMesh
 from nbodykit.lab import HDFCatalog
 from nbodykit import CurrentMPIComm
-import lim_lytomo
-from lim_lytomo import git_handler
+from . import git_handler
 
 class MockGalaxy():
     """A class for mock Line Intensit Map """
@@ -287,6 +286,7 @@ class MockGalaxy():
                 
     def save_map(self,save_path):
         """Save the galaxy map on an hd5 file for later usage"""
+        import lila
         with h5py.File(save_path,'w') as fw:
             if not self.silent_mode:
                 self.logger.info('Computing the mesh density')
@@ -298,5 +298,5 @@ class MockGalaxy():
             # when reading this convert it to a list with :
             # `f['Git'].attrs['HEAD_HASH'].tolist()`
             fw.create_group('Git')
-            head_hash = git_handler.get_head_hash(lim_lytomo)
+            head_hash = git_handler.get_head_hash(lila)
             fw['Git'].attrs["HEAD_HASH"] = np.void(head_hash)
